@@ -66,7 +66,7 @@ alert(age);
 let user = {
     name: 'Анна',
     age: 28,
-    isAdmin: Boolean(1)
+    isAdmin: true
 }
 
 user["city of residence"] = 'Санкт-Петербург';
