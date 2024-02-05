@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        padding-top: 239px;
+        &__title {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &__text {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px; /* 157.143% */
+
+            &--mod {
+                color: #FFF;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .container {
+
+        &__item {
+            max-width: 343px;
+        }
+    }
+}

@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 600);
-    padding-right: calc(50% - 600);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -25,7 +25,7 @@ body {
 }
 
 .top {
-    padding: 217px;
+    padding: 217px 0;
 }
 
 .top__title {
@@ -41,6 +41,13 @@ body {
     font-weight: 300;
     line-height: 32px;
     margin: 32px 0 44px;
+
+    &--mod {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+    }
 }
 
 .top__button {
@@ -67,11 +74,6 @@ body {
     justify-content: space-between;
 }
 
-.container__item {
-    width: 379px;
-    height: 300px;
-}
-
 .container__link {
     position: relative;
 }
@@ -96,3 +98,5 @@ body {
     border: 3px solid #44D2FF;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50% / cover no-repeat;
 }
+
+@import 'mobile';
