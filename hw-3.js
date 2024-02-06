@@ -85,7 +85,13 @@ let ansNumber = prompt('Пожалуйста, введите любое числ
 
 
 if (isNaN(ansNumber)) {
-    alert('NaN')
+    console.log('NaN');
 } else {
-    alert('Число')
+    console.log('Число');
+}
+
+if (ansNumber % 2 === 0) {
+    alert('Число четное')
+} else {
+    alert('Число нечетное')
 }
