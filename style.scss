@@ -152,4 +152,17 @@ body {
     }
 }
 
+.words {
+    display: flex;
+    gap: 135px;
+    align-items: center;
+    padding: 239px 0;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 @import "mobile";
