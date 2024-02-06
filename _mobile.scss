@@ -57,6 +57,7 @@
     }
 
     .left {
+        width: 343px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,7 +75,6 @@
         }
 
         &__text {
-            width: 343px;
             text-align: center;
         }
     }
