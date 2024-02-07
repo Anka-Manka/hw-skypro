@@ -84,16 +84,15 @@ if (isNaN(monthNumber) || !monthNumber) {
 let ansNumber = prompt('Пожалуйста, введите любое число');
 
 
-if (isNaN(ansNumber)) {
+if (isNaN(ansNumber) || !ansNumber) {
     console.log('NaN');
 } else {
-    console.log('Число');
-}
-
-if (ansNumber % 2 === 0) {
-    alert('Число четное')
-} else {
-    alert('Число нечетное')
+    console.log(`${ansNumber}`);
+    if (ansNumber % 2 === 0) {
+        alert('Число четное')
+    } else {
+        alert('Число нечетное')
+    }
 }
 
 
