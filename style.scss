@@ -70,9 +70,9 @@ body {
     padding: 128px 0;
     display: flex;
     gap: 32px;
-    // justify-content: space-between;
 
     &__item {
+        height: 300px;
         width: 379px;
 
         &--img {

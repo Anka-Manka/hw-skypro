@@ -71,6 +71,7 @@ body {
   gap: 32px;
 }
 .container__item {
+  height: 300px;
   width: 379px;
 }
 .container__item--img {
