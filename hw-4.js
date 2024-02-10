@@ -1,37 +1,37 @@
-// // Task 1;
+// Task 1;
 
-// for (let i = 0; i < 2; i++) {
-//     console.log('Привет');;
-// }
-
-
-
-// // Task 2;
-
-// for (let i = 1; i <= 5; i++) {
-//     console.log(i);
-// }
-
-
-// // Task 3;
-
-// for (let i = 7; i <= 22; i++) {
-//     console.log(i);
-// }
+for (let i = 0; i < 2; i++) {
+    console.log('Привет');;
+}
 
 
 
-// // Task 4;
+// Task 2;
 
-// const obj = {
-//     'Коля': '200',
-//     'Вася': '300',
-//     'Петя': '400'
-// }
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 
-// for (const friends in obj) {
-//     alert(`${friends} — зарплата ${obj[friends]} долларов.`)
-// }
+
+// Task 3;
+
+for (let i = 7; i <= 22; i++) {
+    console.log(i);
+}
+
+
+
+// Task 4;
+
+const obj = {
+    'Коля': '200',
+    'Вася': '300',
+    'Петя': '400'
+}
+
+for (const friends in obj) {
+    alert(`${friends} — зарплата ${obj[friends]} долларов.`)
+}
 
 
 
