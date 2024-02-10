@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 591px);
+  padding-right: calc(50% - 591px);
 }
 
 .header {
@@ -59,7 +59,6 @@ body {
   font-weight: 400;
   border: none;
 }
-
 .top__button:hover {
   background: #eb443f;
   cursor: pointer;
@@ -159,6 +158,62 @@ body {
   line-height: 32px;
 }
 
+.puzzle {
+  background-image: url(./img/unsplash_iO0I6-mhDEY.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 276px;
+}
+.game__title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.game__text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+.game__button {
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  border: none;
+  width: 234px;
+  height: 48px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.game__button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 68, 63);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 32.5px 0;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
 @media (max-width: 375px) {
   .center {
     padding-left: 16px;
@@ -255,5 +310,16 @@ body {
     font-weight: 300;
     line-height: 22px;
     text-align: center;
+  }
+  .game {
+    padding-top: 51px;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
