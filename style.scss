@@ -26,21 +26,18 @@ body {
 
 .top {
     padding: 217px 0;
-}
-
-.top__title {
-    color: #fff;
-    font-size: 64px;
-    font-weight: 700;
-}
-
-.top__text {
-    width: 481px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32px;
-    margin: 32px 0 44px;
+    &__title {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    &__text {
+        width: 481px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        margin: 32px 0 44px;
 
     &--mod {
         color: #fff;
@@ -59,11 +56,11 @@ body {
     font-size: 18px;
     font-weight: 400;
     border: none;
+}
 
-    &:hover {
-        background: #eb443f;
-        cursor: pointer;
-    }
+.top__button:hover {
+    background: #eb443f;
+    cursor: pointer;
 }
 
 .container {
