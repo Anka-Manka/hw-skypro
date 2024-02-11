@@ -111,10 +111,11 @@
     }
 
     .puzzle {
+        padding: 51px 16px 0;
     }
 
     .game {
-        padding-top: 51px;
+        // padding-top: 51px;
         &__title {
             font-size: 32px;
             line-height: 39px;
@@ -124,7 +125,5 @@
             font-size: 14px;
             line-height: 22px;
         }
-
-
     }
 }
