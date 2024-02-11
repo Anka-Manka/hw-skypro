@@ -27,13 +27,11 @@ body {
 .top {
   padding: 217px 0;
 }
-
 .top__title {
   color: #fff;
   font-size: 64px;
   font-weight: 700;
 }
-
 .top__text {
   width: 481px;
   color: #fff;
@@ -48,7 +46,6 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
-
 .top__button {
   width: 234px;
   height: 48px;
@@ -59,7 +56,6 @@ body {
   font-weight: 400;
   border: none;
 }
-
 .top__button:hover {
   background: #eb443f;
   cursor: pointer;
@@ -71,6 +67,7 @@ body {
   gap: 32px;
 }
 .container__item {
+  height: 300px;
   width: 379px;
 }
 .container__item--img {
@@ -113,7 +110,6 @@ body {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
-  letter-spacing: 0px;
 }
 .left__title--mobi {
   display: none;
@@ -123,7 +119,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
-  letter-spacing: 0px;
 }
 .left__button {
   width: 234px;
@@ -135,11 +130,29 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0px;
 }
 .left__button:hover {
   cursor: pointer;
   background-color: rgb(235, 68, 63);
+}
+
+.words {
+  display: flex;
+  gap: 135px;
+  align-items: center;
+  padding: 239px 0;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.right-content__text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
 }
 
 @media (max-width: 375px) {
@@ -161,7 +174,6 @@ body {
     color: #fff;
     text-align: center;
     font-size: 32px;
-    font-weight: 700;
   }
   .top__text {
     width: 343px;
@@ -208,12 +220,35 @@ body {
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
-    letter-spacing: 0px;
   }
   .left__text {
     text-align: center;
   }
   svg {
     width: 343px;
+  }
+  .words {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 64px;
+    padding: 51px 0 90px;
+  }
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+  .right-content__title {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .right-content__text {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

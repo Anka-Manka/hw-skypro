@@ -26,53 +26,49 @@ body {
 
 .top {
     padding: 217px 0;
-}
-
-.top__title {
-    color: #fff;
-    font-size: 64px;
-    font-weight: 700;
-}
-
-.top__text {
-    width: 481px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32px;
-    margin: 32px 0 44px;
-
-    &--mod {
+    &__title {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    &__text {
+        width: 481px;
         color: #fff;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 300;
         line-height: 32px;
+        margin: 32px 0 44px;
+
+        &--mod {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+        }
     }
-}
-
-.top__button {
-    width: 234px;
-    height: 48px;
-    border-radius: 30px;
-    background: #9c0332;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-}
-
-.top__button:hover {
-    background: #eb443f;
-    cursor: pointer;
+    &__button {
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background: #9c0332;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+        &:hover {
+            background: #eb443f;
+            cursor: pointer;
+        }
+    }
 }
 
 .container {
     padding: 128px 0;
     display: flex;
     gap: 32px;
-    // justify-content: space-between;
 
     &__item {
+        height: 300px;
         width: 379px;
 
         &--img {
@@ -119,7 +115,6 @@ body {
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
-        letter-spacing: 0px;
         &--mobi {
             display: none;
         }
@@ -130,7 +125,6 @@ body {
         font-size: 18px;
         font-weight: 300;
         line-height: 32px;
-        letter-spacing: 0px;
     }
 
     &__button {
@@ -143,12 +137,31 @@ body {
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
-        letter-spacing: 0px;
 
         &:hover {
             cursor: pointer;
             background-color: rgb(235, 68, 63);
         }
+    }
+}
+
+.words {
+    display: flex;
+    gap: 135px;
+    align-items: center;
+    padding: 239px 0;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
     }
 }
 
