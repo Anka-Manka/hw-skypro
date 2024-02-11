@@ -15,8 +15,7 @@ least(6, 6);
 // Task 2; Напишите функцию, которая принимает число, а возвращает строку 'Число четное', 
 // если число четное, 'Число нечетное' — если нечетное.
 
-function parity() {
-    let n = prompt('Введите число');
+function parity(n) {
     if (n % 2 === 0) {
         return console.log(`Число ${n} чётное`);
     } else {
@@ -24,18 +23,17 @@ function parity() {
     }
 }
 
-parity();
+parity(3);
 
 
 // Task 3; Функция принимает параметром число и выводит в консоль квадрат этого числа.
 // Функция принимает параметром число и возвращает квадрат этого числа.
 
-let squareNum = function () {
-    let num = prompt('Введите число')
+let squareNum = function (num) {
     return console.log(num ** 2);;
 }
 
-squareNum();
+squareNum(5);
 
 
 // Task 4;
@@ -56,10 +54,7 @@ userAge();
 
 // Task 5; Напишите функцию, которая на вход принимает 2 числа:
 
-let mult = function () {
-    let num1 = prompt('Введите первое число');
-    let num2 = prompt('Введите второе число');
-
+let mult = function (num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
         return console.log('Одно или оба значения не являются числом');
     } else {
@@ -67,7 +62,7 @@ let mult = function () {
     }
 }
 
-mult();
+mult(3, -3);
 
 
 // Task 6;
