@@ -27,13 +27,11 @@ body {
 .top {
   padding: 217px 0;
 }
-
 .top__title {
   color: #fff;
   font-size: 64px;
   font-weight: 700;
 }
-
 .top__text {
   width: 481px;
   color: #fff;
@@ -48,7 +46,6 @@ body {
   font-weight: 700;
   line-height: 32px;
 }
-
 .top__button {
   width: 234px;
   height: 48px;
@@ -59,7 +56,6 @@ body {
   font-weight: 400;
   border: none;
 }
-
 .top__button:hover {
   background: #eb443f;
   cursor: pointer;
@@ -178,7 +174,6 @@ body {
     color: #fff;
     text-align: center;
     font-size: 32px;
-    font-weight: 700;
   }
   .top__text {
     width: 343px;
