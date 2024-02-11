@@ -84,14 +84,52 @@ if (isNaN(monthNumber) || !monthNumber) {
 let ansNumber = prompt('Пожалуйста, введите любое число');
 
 
-if (isNaN(ansNumber)) {
+if (isNaN(ansNumber) || !ansNumber) {
     console.log('NaN');
 } else {
-    console.log('Число');
+    console.log(`${ansNumber}`);
+    if (ansNumber % 2 === 0) {
+        alert('Число четное')
+    } else {
+        alert('Число нечетное')
+    }
 }
 
-if (ansNumber % 2 === 0) {
-    alert('Число четное')
+
+// Task 8;
+
+let clientOS = 0; // 0 - iOS, 1 - Android
+
+if (clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке')
+} else if (clientOS === 1) {
+    alert('Установите версию приложения для Andriod по ссылке')
 } else {
-    alert('Число нечетное')
+    alert('Не корректное значение')
+}
+
+
+// Task 9;
+
+let newClientOS = 0; // 0 - iOS, 1 - Android
+let clientDeviceYear = 2015;
+
+if (clientDeviceYear >= 2015) {
+    switch (newClientOS) {
+        case 0:
+            console.log('Установите версию приложения для iOS по ссылке')
+            break;
+        case 1:
+            console.log('Установите версию приложения для Andriod по ссылке')
+            break;
+    }
+} else {
+    switch (newClientOS) {
+        case 0:
+            console.log('Установите облегченную версию приложения для iOS по ссылке')
+            break;
+        case 1:
+            console.log('Установите облегченную версию приложения для Android по ссылке')
+            break;
+    }
 }
