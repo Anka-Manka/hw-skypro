@@ -3,8 +3,9 @@
 const massiv = [1, 5, 4, 10, 0, 3];
 
 for (let el = 0; el < massiv.length; el++) {
-    if (massiv[el] == 10) break; {
-        console.log(massiv[el]);
+    console.log(massiv[el]);
+    if (massiv[el] == 10) {
+        break;
     }    
 }
 
@@ -53,7 +54,8 @@ console.log(newMassiv);
 // Task 7;
 
 let answer = prompt('Угадай число');
-if (newMassiv.includes(Number(answer))) {
+answer = Number(answer);
+if (!isNaN(answer) && newMassiv.includes(answer)) {
     alert('Угадал');
 } else {
     alert('Не угадал');
@@ -73,55 +75,41 @@ const table = [
     [4, 5, 6],
 ];
 
-console.log(table.reduce((acc, val) => acc.concat(val), []));
+console.log(table.reduce((a, b) => a.concat(b), []));
 
 
 // Task 10;
 
 const arr10 = [2, 4, 5, 7, 3, 1, 9, 8, 10];
 
-for (let i = 0; i < arr10.length; i++) {
-    console.log(arr10.reduce((a, b) => a + b));
+for (let i = 0; i < arr10.length - 1; i++) {
+    console.log(arr10[i] + arr10[i + 1]);
 }
 
 
 // Task 11;
 
-function square(len) {
-    let numArr = [];
-    for (let i = 0; i < len; i++) {
-        let number = prompt('Введите число');
-        numArr.push(Number(number));
-    };
-    const squareArr = numArr.map((number) => number ** 2);
-    console.log(squareArr);
+function square(arr) {
+    return arr.map((num) => num ** 2);
 }
 
-square(5);
+console.log(square([1, 2, 3, 4, 5]));
 
 
 // Task 12; Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов
 
-function getLengthWords(len) {
-    const wordArr = [];
-    const lenWords =[];
-    for (let i = 0; i < len; i++) {
-        let words = prompt('Введите слова');
-        wordArr.push(words);
-        lenWords.push(wordArr[i].length);
-    }
-    return console.log(lenWords);
+function getLengthWords(array) {
+    return array.map(word => word.length);
 }
 
-getLengthWords(5);
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
 
 
 // Task 13; Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
 
 function filterPositive(array) {
-    const ArrayNumber = [];
-    
+    return array.filter(value => value <  0);
 }
 
-filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
