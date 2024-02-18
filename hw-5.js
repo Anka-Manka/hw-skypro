@@ -3,13 +3,13 @@
 
 function least(a, b) {
     if (a > b) {
-        return console.log(a);
+        return a;
     } else {
-        return console.log(b);
+        return b;
     }
 }
 
-least(6, 6);
+console.log(least(6, 6));
 
 
 // Task 2; Напишите функцию, которая принимает число, а возвращает строку 'Число четное', 
@@ -17,23 +17,23 @@ least(6, 6);
 
 function parity(n) {
     if (n % 2 === 0) {
-        return console.log(`Число ${n} чётное`);
+        return `Число ${n} чётное`;
     } else {
-        return console.log(`Число ${n} нечётное`);
+        return `Число ${n} нечётное`;
     }
 }
 
-parity(3);
+console.log(parity(3));
 
 
 // Task 3; Функция принимает параметром число и выводит в консоль квадрат этого числа.
 // Функция принимает параметром число и возвращает квадрат этого числа.
 
 let squareNum = function (num) {
-    return console.log(num ** 2);;
+    return num ** 2;
 }
 
-squareNum(5);
+console.log(squareNum(5));
 
 
 // Task 4;
@@ -56,13 +56,13 @@ userAge();
 
 let mult = function (num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
-        return console.log('Одно или оба значения не являются числом');
+        return 'Одно или оба значения не являются числом';
     } else {
-        return console.log(num1 * num2);;
+        return num1 * num2;
     }
 }
 
-mult(3, -3);
+console.log(mult(3, -3));
 
 
 // Task 6;
@@ -70,13 +70,13 @@ mult(3, -3);
 let cubNum = function () {
     let n = prompt('Введите число')
     if (isNaN(n)) {
-        return console.log('Переданный параметр не является числом');
+        return 'Переданный параметр не является числом';
     } else {
-        return console.log(`n в кубе равняется ${n ** 3}`);
+        return `n в кубе равняется ${n ** 3}`;
     }
 }
 
-cubNum();
+console.log(cubNum());
 
 
 // Task 7; Создайте объекты circle1 и circle2 со свойством radius
