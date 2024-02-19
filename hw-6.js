@@ -4,7 +4,7 @@ const massiv = [1, 5, 4, 10, 0, 3];
 
 for (let el = 0; el < massiv.length; el++) {
     console.log(massiv[el]);
-    if (massiv[el] == 10) {
+    if (massiv[el] === 10) {
         break;
     }    
 }
@@ -57,6 +57,8 @@ let answer = prompt('Угадай число');
 answer = Number(answer);
 if (!isNaN(answer) && newMassiv.includes(answer)) {
     alert('Угадал');
+} else if (isNaN(answer) || answer == '') {
+    alert('Введите корректное значение');
 } else {
     alert('Не угадал');
 }
@@ -75,7 +77,7 @@ const table = [
     [4, 5, 6],
 ];
 
-console.log(table.reduce((a, b) => a.concat(b), []));
+console.log(table.flat());
 
 
 // Task 10;
