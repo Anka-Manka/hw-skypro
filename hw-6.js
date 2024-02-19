@@ -1,127 +1,117 @@
-// // Task 1;
+// Task 1;
 
-// const massiv = [1, 5, 4, 10, 0, 3];
+const massiv = [1, 5, 4, 10, 0, 3];
 
-// for (let el = 0; el < massiv.length; el++) {
-//     if (massiv[el] == 10) break; {
-//         console.log(massiv[el]);
-//     }    
-// }
-
-
-// // Task 2;
-
-// console.log(massiv.indexOf(4));
+for (let el = 0; el < massiv.length; el++) {
+    console.log(massiv[el]);
+    if (massiv[el] === 10) {
+        break;
+    }    
+}
 
 
-// // Task 3;
+// Task 2;
 
-// const arr = [1, 3, 5, 10, 20];
-
-// console.log(arr.join(' '));
+console.log(massiv.indexOf(4));
 
 
-// // Task 4;
+// Task 3;
 
-// let newArr = [];
+const arr = [1, 3, 5, 10, 20];
 
-// for (let i = 0; i < 3; i++) {
-// 	newArr[i] = [];
+console.log(arr.join(' '));
+
+
+// Task 4;
+
+let newArr = [];
+
+for (let i = 0; i < 3; i++) {
+	newArr[i] = [];
 	
-// 	for (let j = 0; j < 3; j++) {
-// 		newArr[i].push(1);
-// 	}
-// }
-// console.log(newArr);
+	for (let j = 0; j < 3; j++) {
+		newArr[i].push(1);
+	}
+}
+console.log(newArr);
 
 
-// // Task 5;
+// Task 5;
 
-// let mas = [1, 1, 1];
-// mas.push(2, 2, 2);
-// console.log(mas);
-
-
-// // Task 6;
-
-// const newMassiv = [9, 8, 7, 'a', 6, 5];
-// newMassiv.sort();
-// newMassiv.pop();
-// console.log(newMassiv);
+let mas = [1, 1, 1];
+mas.push(2, 2, 2);
+console.log(mas);
 
 
-// // Task 7;
+// Task 6;
 
-// let answer = prompt('Угадай число');
-// if (newMassiv.includes(Number(answer))) {
-//     alert('Угадал');
-// } else {
-//     alert('Не угадал');
-// }
+const newMassiv = [9, 8, 7, 'a', 6, 5];
+newMassiv.sort();
+newMassiv.pop();
+console.log(newMassiv);
 
 
-// // Task 8;
+// Task 7;
 
-// const arrStr = 'abcdef';
-// console.log(arrStr.split("").reverse().join(""));
-
-
-// // Task 9;
-
-// const table = [
-//     [1, 2, 3,],
-//     [4, 5, 6],
-// ];
-
-// console.log(table.reduce((acc, val) => acc.concat(val), []));
+let answer = prompt('Угадай число');
+answer = Number(answer);
+if (!isNaN(answer) && newMassiv.includes(answer)) {
+    alert('Угадал');
+} else if (isNaN(answer) || answer == '') {
+    alert('Введите корректное значение');
+} else {
+    alert('Не угадал');
+}
 
 
-// // Task 10;
+// Task 8;
 
-// const arr10 = [2, 4, 5, 7, 3, 1, 9, 8, 10];
-
-// for (let i = 0; i < arr10.length; i++) {
-//     console.log(arr10.reduce((a, b) => a + b));
-// }
+const arrStr = 'abcdef';
+console.log(arrStr.split("").reverse().join(""));
 
 
-// // Task 11;
+// Task 9;
 
-// function square(len) {
-//     let numArr = [];
-//     for (let i = 0; i < len; i++) {
-//         let number = prompt('Введите число');
-//         numArr.push(Number(number));
-//     };
-//     const squareArr = numArr.map((number) => number ** 2);
-//     console.log(squareArr);
-// }
+const table = [
+    [1, 2, 3,],
+    [4, 5, 6],
+];
 
-// square(5);
+console.log(table.flat());
 
 
-// // Task 12; Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов
+// Task 10;
 
-// function getLengthWords(len) {
-//     const wordArr = [];
-//     const lenWords =[];
-//     for (let i = 0; i < len; i++) {
-//         let words = prompt('Введите слова');
-//         wordArr.push(words);
-//         lenWords.push(wordArr[i].length);
-//     }
-//     return console.log(lenWords);
-// }
+const arr10 = [2, 4, 5, 7, 3, 1, 9, 8, 10];
 
-// getLengthWords(5);
+for (let i = 0; i < arr10.length - 1; i++) {
+    console.log(arr10[i] + arr10[i + 1]);
+}
 
 
-// // Task 13; Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
+// Task 11;
 
-// function filterPositive(array) {
-//     const ArrayNumber = [];
-    
-// }
+function square(arr) {
+    return arr.map((num) => num ** 2);
+}
 
-// filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-// filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+console.log(square([1, 2, 3, 4, 5]));
+
+
+// Task 12; Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов
+
+function getLengthWords(array) {
+    return array.map(word => word.length);
+}
+
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
+
+
+// Task 13; Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
+
+function filterPositive(array) {
+    return array.filter(value => value <  0);
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
