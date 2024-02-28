@@ -98,7 +98,7 @@ console.log(getDateTime(2024, 2, 27));
 
 function rememberTheWords() {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    arr = arr.sort(() => Math.random() - 0.5).join(', ');
+    arr = arr.sort(() => Math.random() - 0.5);
     alert(arr);
     
     let answerFirst = prompt('Чему равнялся первый элемент массива?');
@@ -106,11 +106,11 @@ function rememberTheWords() {
     
     if (!answerFirst || !answerSecond || !isNaN(answerFirst) || !isNaN(answerSecond)) {
         alert('Введите корректное значение');
-    } else if (answerFirst.startsWith(arr) && answerSecond.endsWith(arr)) {
+    } else if (answerFirst === arr[0] && answerSecond === arr[arr.length - 1]) {
         alert('Поздравляем, Вы угадали оба элемента');
-    // } else if (answerFirst === arr[0] || answerSecond === arr[arr.length - 1]) {
-    //     alert('Вы были близки к победе!');
+    } else if (answerFirst === arr[0] || answerSecond === arr[arr.length - 1]) {
+        alert('Вы были близки к победе!');
     } else {
-        alert('Вы ответили неверно!');
+        alert('К сожалению, вы ответили неверно. Попробуйте еще раз');
     }
 }
