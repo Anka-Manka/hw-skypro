@@ -32,7 +32,7 @@ console.log(Math.min(52, 53, 49, 77, 21, 32)); // MIN
 // Task 5;
 
 function getRandomNumber() {
-    return Math.random() * 10;
+    return Math.round(Math.random() * 10);
 }
 
 console.log(getRandomNumber());
