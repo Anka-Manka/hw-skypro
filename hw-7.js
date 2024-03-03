@@ -32,7 +32,7 @@ console.log(Math.min(52, 53, 49, 77, 21, 32)); // MIN
 // Task 5;
 
 function getRandomNumber() {
-    return Math.round(Math.random() * 10);
+    return Math.round(Math.random() * 10) + 1;
 }
 
 console.log(getRandomNumber());
@@ -106,9 +106,9 @@ function rememberTheWords() {
     
     if (!answerFirst || !answerSecond || !isNaN(answerFirst) || !isNaN(answerSecond)) {
         alert('Введите корректное значение');
-    } else if (answerFirst === arr[0] && answerSecond === arr[arr.length - 1]) {
+    } else if (answerFirst === arr[0].toLowerCase && answerSecond === arr[arr.length - 1].toLowerCase) {
         alert('Поздравляем, Вы угадали оба элемента');
-    } else if (answerFirst === arr[0] || answerSecond === arr[arr.length - 1]) {
+    } else if (answerFirst === arr[0].toLowerCase || answerSecond === arr[arr.length - 1].toLowerCase) {
         alert('Вы были близки к победе!');
     } else {
         alert('К сожалению, вы ответили неверно. Попробуйте еще раз');
